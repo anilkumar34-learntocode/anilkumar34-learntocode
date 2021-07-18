@@ -1,0 +1,35 @@
+.header {
+  height: 95vh;
+  margin-bottom: 0.5rem;
+
+  background-image: linear-gradient(
+      to right bottom,
+      $color-primary-light,
+      $color-primary
+    ),
+    url(../img/aus7.jpg);
+  background-size: cover;
+  background-position: top;
+
+  position: relative;
+  animation: moveinleft 3s ease-in-out;
+  &__logobox {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+  }
+  &__logo {
+    height: 4rem;
+    transition: 1s;
+  }
+  &__logo:hover {
+    transform: scale(1.2);
+  }
+  &__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-40%, -40%);
+    text-align: center;
+  }
+}
